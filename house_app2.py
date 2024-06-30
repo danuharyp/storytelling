@@ -9,6 +9,10 @@ import pickle
 with open('house_xgb_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
+
+from streamlit_folium import folium_static
+import folium
+
 def location_map(lat, long):
     m = folium.Map(location=[lat, long], zoom_start=10)
 
