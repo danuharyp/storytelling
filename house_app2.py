@@ -4,10 +4,6 @@ import streamlit as st
 from streamlit_folium import folium_static
 import folium
 import pickle
-import time
-
-# Load the data
-data = pd.read_csv('housing.csv')
 
 # Load the model 
 with open('house_xgb_model.pkl', 'rb') as f:
